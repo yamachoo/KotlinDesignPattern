@@ -7,9 +7,10 @@ import java.nio.file.StandardOpenOption
 
 abstract class Page(
     protected val title: String,
-    protected val author: String,
-    private val content: MutableList<Item>
+    protected val author: String
 ) {
+    protected val content = mutableListOf<Item>()
+
     fun add(item: Item) = content.add(item)
     fun output(filename: String) {
         try {
