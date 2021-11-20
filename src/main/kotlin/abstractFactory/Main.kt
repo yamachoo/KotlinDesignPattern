@@ -6,8 +6,8 @@ import kotlin.system.exitProcess
 fun main(args: Array<String>) {
     if (args.size != 2) {
         println("Usage: kotlin Main filename.html class.name.of.ConcreteFactory")
-        println("Example 1: java Main list.html listfactory.ListFactory")
-        println("Example 2: java Main div.html divfactory.DivFactory")
+        println("Example 1: java Main list.html listFactory.ListFactory")
+        println("Example 2: java Main div.html divFactory.DivFactory")
         exitProcess(0)
     }
 
