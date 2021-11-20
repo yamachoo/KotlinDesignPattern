@@ -1,8 +1,7 @@
 package abstractFactory.factory
 
-abstract class Tray(
-    caption: String,
-    private val tray: MutableList<Item>
-) : Item(caption) {
+abstract class Tray(caption: String) : Item(caption) {
+    protected val tray = mutableListOf<Item>()
+
     fun add(item: Item) = tray.add(item)
 }
